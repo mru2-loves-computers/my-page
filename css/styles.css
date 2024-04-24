@@ -33,11 +33,21 @@ ul {
 }
 nav ul li {
     display: inline-block;
+    padding: 15px 0;
+    font-size: 19px;
+    color: var(--fg);
+}
+nav ul li:after {
+    display: inline-block;
+    content: '\276F';
+    margin-left: 11px;
+    margin-right: 13px;
+}
+nav ul li:last-child:after {
+    display: none;
 }
 nav ul li a {
-    display: block;
-    margin: 0;
-    padding: 10px 25px;
+    display: inline;
     font-size: 19px;
     color: var(--fg);
 }
