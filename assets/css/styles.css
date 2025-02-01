@@ -1,0 +1,30 @@
+:root {
+    --bg: #222;
+    --fg: #bbb;
+}
+/* GENERAL */
+a,a:visited,a:active {
+    text-decoration: none;
+}
+/* general */
+body {
+    background-color: var(--bg);
+    color: var(--fg);
+}
+
+/* navbar */
+nav ul {
+    list-style: none;
+    margin: 0 -6px;
+    padding: 0;
+}
+nav ul > li {
+    display: inline-block;
+}
+nav ul > li > a {
+    display: block;
+    padding: 6px 16px;
+}
+header {
+    min-height: 160px;
+}
