@@ -4,41 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Computer Page</title>
-
-    <link rel="stylesheet" href="./css/styles.css">
-
-    <!-- <link rel="stylesheet" href="/css/styles.css"> -->
-
+    <script src="../js/jq.js"></script>
+    <script> 
+        $(function(){
+            $("#header").load("../parts/header.html"); 
+            $("#content").load("../pages/home.html"); 
+            $("#footer").load("../parts/footer.html"); 
+        });
+    </script> 
 </head>
+
 <body>
-    <header>
-        <div class="container">
-            <div class="text-center">
-                <nav>
-                    <ul>
-                        <li>Home</li>
-                        <li>
-                            <a href="./all-amiga/">All Amiga stuff</a>
-                            <!-- <a href="/all-amiga/">All Amiga stuff</a> -->
-                        </li>
-                    </ul> 
-                </nav>                       
-            </div>
-        </div>
-    </header>
-    <main>
-
-    </main>
-    <footer>
-
-    </footer>
-    
-
-    <script src="./js/jq.js"></script>
-    <script src="./js/main.js"></script>
-    
-    <!-- <script src="/js/jq.js"></script>
-    <script src="/js/main.js"></script> -->
-
+    <div id="header"></div>    
+    <main id="content"></main>
+    <div id="footer"></div>
 </body>
 </html>
